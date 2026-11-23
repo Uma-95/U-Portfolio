@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Future AGI — GenAI Evaluation Platform · Uma Lamba</title>
+<meta name="description" content="This case study presents a strategic product teardown I developed as part of a hiring assignment for Future AGI">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<div class="wrap">
+  <nav aria-label="Main">
+    <a class="name" href="../index.html">Uma Lamba</a>
+    <ul>
+      <li><a href="../index.html#about">About</a></li>
+      <li><a href="../index.html#projects">Projects</a></li>
+      <li><a href="../pm-diaries.html">PM Diaries</a></li>
+      <li><a href="../Uma_Lamba_Resume.pdf">Resume</a></li>
+    </ul>
+  </nav>
+  <a class="back" href="../index.html#projects">← All projects</a>
+  <header class="page-head">
+    <h1>Future AGI — GenAI Evaluation Platform</h1>
+    <p class="lede">This case study presents a strategic product teardown I developed as part of a hiring assignment for Future AGI</p>
+    <div class="meta"><span class="tag">Product Sense</span><span class="tag">1 week</span></div>
+  </header>
+  <article class="prose">
+<h2 id="ℹ️-about-the-project">ℹ️ About the project</h2>
+<div class="callout">
+
+<p>🎯</p>
+<p>This was a hands-on product evaluation submitted for a Business Internship at Future AGI, a platform that helps teams test, monitor, and evaluate GenAI outputs with structured, scalable systems. Think of it as the QA + trust layer for large language model-powered features.</p>
+<p>The goal of the assignment was to:</p>
+<ul>
+<li>Understand the platform's user base and functionality</li>
+<li>Simulate a real-world use case with GenAI summarization</li>
+<li>Analyze built-in and custom evaluation tools</li>
+<li>Suggest product-level improvements based on friction points</li>
+</ul>
+<p>While this was part of a hiring assignment and not a live implementation, I approached it like a PM evaluating the product’s workflow, feature gaps, and UX experience.</p>
+<p><strong>Disclaimer:</strong> This was a strategic product evaluation project submitted for the Future AGI internship hiring process. No features were developed live.</p>
+</div>
+
+<hr />
+<h2 id="-timeline--execution-overview">🚀 Timeline &amp; Execution Overview</h2>
+<div class="callout">
+
+<p>⏰</p>
+<p>This assignment was completed in 3 days and structured like a full-stack product simulation. The process had three parts:</p>
+<ul>
+<li>Platform &amp; user research</li>
+<li>Hands-on product evaluation (with a 10-row GenAI dataset)</li>
+<li>Structured product/UX feedback</li>
+</ul>
+<p>Each part was designed to mimic real PM decision loops: assess → simulate → recommend.</p>
+</div>
+
+<hr />
+<h2 id="1️⃣-product-understanding-core-users-and-value-prop">1️⃣ <strong>Product Understanding: Core Users and Value Prop</strong></h2>
+<div class="callout">
+
+<p>🗣</p>
+<p>Future AGI supports teams building with LLMs and GenAI by offering infrastructure to evaluate and optimize outputs. These are the core user types:</p>
+<table>
+<thead>
+<tr class="header">
+<th><strong>User Type</strong></th>
+<th><strong>Core Pain Point</strong></th>
+<th><strong>Platform Value Addition</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>AI Engineers</td>
+<td>Manual prompt testing, no feedback loop</td>
+<td>Structured, repeatable eval &amp; version control</td>
+</tr>
+<tr class="even">
+<td>Product Managers</td>
+<td>Lack of visibility, no clear success metric</td>
+<td>Data-backed QA &amp; explainability for decisions</td>
+</tr>
+<tr class="odd">
+<td>Analysts</td>
+<td>Too much manual review</td>
+<td>Custom automation + output validation tools</td>
+</tr>
+<tr class="even">
+<td>AI Researchers</td>
+<td>No reproducibility or experiment structure</td>
+<td>Traceable, iterative experiments</td>
+</tr>
+<tr class="odd">
+<td>Enterprise Teams</td>
+<td>Compliance, black-box models</td>
+<td>Monitoring, guardrails, and standardization</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<hr />
+<h2 id="2️⃣-hands-on-simulation-summary-evaluation-use-case">2️⃣ <strong>Hands-On Simulation: Summary Evaluation Use Case</strong></h2>
+<div class="callout">
+
+<p>💡</p>
+<p><strong>Use Case:</strong> Test quality, factual grounding, and grammar of GenAI-generated summaries</p>
+<p><strong>What I did:</strong></p>
+<ul>
+<li>Created a 10-row dataset with ChatGPT (inputs: facts; outputs: summaries)</li>
+<li>Injected deliberate flaws: hallucinated facts, broken grammar, vague or overlong summaries</li>
+<li>Evaluated these using 2 built-in tools and 2 custom metrics</li>
+</ul>
+<p><strong>Evaluation Parameters:</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Metric</th>
+<th>Type</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>detect_hallucination</td>
+<td>Built-in</td>
+<td>Flags fabricated facts</td>
+</tr>
+<tr class="even">
+<td>summary_quality</td>
+<td>Built-in</td>
+<td>Scores clarity and informativeness</td>
+</tr>
+<tr class="odd">
+<td>length_within_limit</td>
+<td>Custom</td>
+<td>Checks for over/under length issues</td>
+</tr>
+<tr class="even">
+<td>structure_grammar_check</td>
+<td>Custom</td>
+<td>Grades grammar/syntax into 3 severity buckets</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<hr />
+<p><img src="../assets/future-agi-teardown/image.png" /></p>
+<table>
+<thead>
+<tr class="header">
+<th>Input</th>
+<th>GenAI Output</th>
+<th>Eval Result</th>
+<th>My Observation</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>“Da Vinci was a painter”</td>
+<td>“Da Vinci played basketball”</td>
+<td>✅ Passed</td>
+<td>❌ Hallucinated fact not caught</td>
+</tr>
+</tbody>
+</table>
+<h2 id="observations-and-results"><strong>Observations and Results</strong></h2>
+<div class="callout">
+
+<p>💭</p>
+<p>✅ <strong>What Worked</strong></p>
+<ul>
+<li>Hallucination detector flagged false info accurately</li>
+<li>Length checker triggered only when rules were broken</li>
+<li>Wide library of built-in evaluations: hallucination, safety, tone, helpfulness</li>
+<li>Prompt-based custom evaluations allow deep flexibility</li>
+<li>Interface is clean and usable even for non-technical teams</li>
+</ul>
+<p>❌ <strong>What Broke</strong></p>
+<ul>
+<li>"Summary quality" gave 100% to outputs with fake content</li>
+<li>Grammar eval missed obvious typos and syntax errors</li>
+<li>Custom re-eval columns caused infinite loading</li>
+<li>Repeated evaluation graphs used the same column names → confusion</li>
+<li>No option to edit eval settings once run starts</li>
+</ul>
+</div>
+
+<hr />
+<div class="callout">
+
+<h2 id="-what-id-improve--suggested-fixes--ux-recommendations">💭 What I’d improve : suggested Fixes &amp; UX Recommendations</h2>
+<p><strong>Product/UX Suggestions:</strong></p>
+<ul>
+<li>Add timestamped eval run names for traceability</li>
+<li>Let users edit prompt logic, input/output config post-creation</li>
+<li>Include progress bar like “Evaluating row 3 of 10”</li>
+<li>Replace infinite loaders with timeouts or “N/A” status</li>
+<li>Add guided setup wizard for first-time users (mapping preview, tooltips)</li>
+</ul>
+<p><strong>Onboarding Feedback:</strong></p>
+<ul>
+<li>My first test broke due to bad input mapping, but there was no error prompt</li>
+<li>Docs weren’t enough → needed interactive validation or sample dataset preview</li>
+</ul>
+</div>
+
+<hr />
+<h2 id="-key-learnings">🎯 Key Learnings</h2>
+<div class="callout">
+
+<p>🔥</p>
+<ul>
+<li>The best GenAI tools don’t just deliver answers, they help you <strong>trust</strong> them</li>
+<li>Evaluation UX needs transparency: what ran, what failed, and why</li>
+<li>Prompt-based QA can scale, but only if built with fail safes</li>
+<li>Real PM thinking = observe friction → propose changes → map value</li>
+</ul>
+</div>
+
+<hr />
+<h2 id="campaign-assets-from-assignment-submission">Campaign Assets (From Assignment Submission)</h2>
+<div class="callout">
+
+<p>📎</p>
+<p>The original dataset, prompt logic, and eval screenshots are available in the full submission. My submission link : <a href="https://docs.google.com/document/d/1eBSIcNcad_2EIHc2UC17I-Tys202T1U_fsydcjNfNW4/edit?usp=sharing"><span>https://docs.google.com/document/d/1eBSIcNcad_2EIHc2UC17I-Tys202T1U_fsydcjNfNW4/edit?usp=sharing</span></a></p>
+<p>This project was a crash course in evaluating not just AI outputs, but also product systems that shape trust and scale. I approached it like a product manager — with user empathy, structured simulation, and solution-driven feedback.</p>
+<p>Future AGI has the bones of a great product. With a few user-facing improvements, it could become the default layer of GenAI QA.</p>
+</div>
+
+<hr />
+
+  </article>
+  <footer>© 2026 Uma Lamba · <a href="mailto:uma.lamba59@gmail.com">uma.lamba59@gmail.com</a> · <a href="https://www.linkedin.com/in/umalamba/">LinkedIn</a></footer>
+</div>
+</body>
+</html>

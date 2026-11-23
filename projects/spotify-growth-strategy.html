@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Growth Strategy for Spotify - Case study · Uma Lamba</title>
+<meta name="description" content="Growth Strategy for Spotify - Case study">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<div class="wrap">
+  <nav aria-label="Main">
+    <a class="name" href="../index.html">Uma Lamba</a>
+    <ul>
+      <li><a href="../index.html#about">About</a></li>
+      <li><a href="../index.html#projects">Projects</a></li>
+      <li><a href="../pm-diaries.html">PM Diaries</a></li>
+      <li><a href="../Uma_Lamba_Resume.pdf">Resume</a></li>
+    </ul>
+  </nav>
+  <a class="back" href="../index.html#projects">← All projects</a>
+  <header class="page-head">
+    <h1>Growth Strategy for Spotify - Case study</h1>
+    
+    <div class="meta"></div>
+  </header>
+  <article class="prose">
+<hr />
+<h1 id="increasing-spotify-users-with-emotion-tagging-for-content-discovery-a-thought-exercise">Increasing Spotify users with Emotion Tagging for Content Discovery: A Thought Exercise</h1>
+<p><em>By Uma Lamba</em></p>
+<hr />
+<h2 id="so-heres-the-thing">So here’s the thing:</h2>
+<p>Spotify already has some really cool features like prompt-based playlist generation. You can type “💔 breakup” or “🔥 energy” and get a playlist that matches that vibe. I love that, it’s clever, intuitive, and getting better.</p>
+<p><strong>But it all starts before the actual listening happens.</strong></p>
+<p>You give it a prompt, it gives you a vibe. That’s it.</p>
+<h3 id="what-if-the-listening-itself-became-the-input"><strong>What if the listening itself became the input?</strong></h3>
+<p>Instead of asking <em>what mood you want</em>, what if Spotify asked <em>how you actually feel while listening</em>?</p>
+<p>Like:</p>
+<ul>
+<li>“This line hit hard.”</li>
+<li>“This podcast made me reflective.”</li>
+<li>“This track made me miss someone.”</li>
+</ul>
+<p>That emotional input could become a living signal for:</p>
+<ul>
+<li>What to recommend next</li>
+<li>What to group together in your listening history</li>
+<li>What kind of moments you’re emotionally returning to</li>
+</ul>
+<h2 id="my-twist-its-not-about-playlists">My twist? It's not about playlists.</h2>
+<p>I’m imagining a personal space inside Spotify, not another playlist, but a <strong>private emotional corner</strong> where users can:</p>
+<ul>
+<li>Leave voice notes about what they’re feeling</li>
+<li>Write a quick memory or journal thought while listening</li>
+<li>Tag something with “rage” or “hopeful” or “grief” or “clarity”</li>
+</ul>
+<p>These check-ins, tags, and voice notes could actually double as <strong>labeled emotional data</strong>, not just UX features.And then that emotional data gets organized with help from ML:</p>
+<ul>
+<li>by emotion type</li>
+<li>by genre</li>
+<li>by energy level</li>
+<li>even by life phase (if you’re open to that)</li>
+</ul>
+<p>Over time, Spotify could use <strong>transcript sentiment</strong> or <strong>acoustic patterns</strong> (like tone of the user’s voice note) to enrich or validate emotional tags, creating a quiet but powerful <strong>human-in-the-loop annotation system</strong>.Kind of like a memory lane, but smarter.</p>
+<hr />
+<h2 id="how-it-could-work">How it could work:</h2>
+<h3 id="goal-setting"><strong>Goal Setting</strong></h3>
+<ul>
+<li>Problem: <em>Can Spotify respond to in-the-moment emotional states?</em></li>
+<li>Outcome: Emotional awareness built into the listening experience itself.</li>
+</ul>
+<h3 id="data-collection--labeling"><strong>Data Collection &amp; Labeling</strong></h3>
+<ul>
+<li>Emotion check-ins, tags, voice notes, journaling — these naturally become labeled data that feed the ML loop.</li>
+</ul>
+<h3 id="annotation-processes"><strong>Annotation Processes</strong></h3>
+<ul>
+<li>User-inputted emotions + NLP/voice signal enrichment from Spotify.</li>
+<li>Feeds into a <strong>semi-supervised system</strong> built on both human and machine input.</li>
+</ul>
+<h3 id="model-development"><strong>Model Development</strong></h3>
+<p>Train models using the following input points:</p>
+<ul>
+<li>Voice tone and cadence from user audio</li>
+<li>Sentiment analysis on journal entries and content transcripts</li>
+<li>Behavioral signals like replays, skips, saves, listens to the end</li>
+</ul>
+<p>These models would classify emotional context and cluster listening behavior based on felt experience.</p>
+<h3 id="deployment"><strong>Deployment</strong></h3>
+<p>The system powers:</p>
+<ul>
+<li>Emotion-smart playlists</li>
+<li>An emotion-tagged content feed</li>
+<li>A “memory space” where users track how different content made them feel over time</li>
+</ul>
+<hr />
+<h2 id="metrics-that-matter">Metrics That Matter</h2>
+<ul>
+<li><strong>Emotional Feature Adoption</strong>: % of users engaging with emotion check-ins, tags, or voice notes</li>
+<li><strong>Cross-Modal Discovery</strong>:Increase in users navigating between content types (e.g., podcast → song) via shared emotional tags</li>
+<li><strong>Archive Engagement</strong>:Return visits to the emotional archive or “memory space” over time</li>
+<li><strong>Personalization Effectiveness</strong>:Uplift in saves/replays from emotion-driven recommendations vs. baseline recommendations</li>
+<li><strong>Feedback Loop Health</strong>:Volume of emotional tags that users correct, confirm, or adjust, helping improve ML accuracy</li>
+<li><strong>Emotional Tag Reuse</strong>:Frequency with which the same tags are applied across different content types</li>
+<li><strong>User Sentiment Shifts</strong>:Trends in how user emotional states evolve within a session or across sessions (optional advanced ML metric)</li>
+</ul>
+<p>All of this gives Spotify a richer signal loop to understand users beyond genres and clicks.</p>
+<hr />
+<h2 id="why-its-different-from-what-spotify-already-does"><strong>Why it’s different from what Spotify already does?</strong></h2>
+<p>This isn’t meant to replace what already exists.It’s a <strong>layer underneath</strong>, a layer of meaning, feeling, and memory.The foundation of this idea builds on what Spotify already does well: mood-based playlists, but takes it a step deeper by shifting from pre-listening prompts to real-time emotional reflection. Today, users might type a prompt like "💔 breakup" and get a playlist curated to that mood. But this proposal imagines emotional input coming <em>during</em> listening, allowing the experience to evolve contextually, not just based on what the user says they want, but how they actually feel.</p>
+<p>While current personalization is driven largely by behavioral signals like skips or saves, this approach layers in self-expression like emotions, voice notes, journal-style reflections, which could give the recommendation engine more human-centered data. And when it comes to content memory, Spotify today offers likes and history. This would introduce an entirely new kind of archive: an emotional feed that remembers not just what you played, but how it made you feel, organized with the help of machine learning.</p>
+<hr />
+<h2 id="why-im-thinking-about-this">Why I’m thinking about this</h2>
+<p>I’ve been sketching an emotional framework for a personal project called <em>POV: The Vibe Compass</em>.</p>
+<p>It’s not fully built yet, right now it’s honestly sitting in my Notion with scattered thoughts and color-coded tags.</p>
+<p>But the idea behind it was to help people navigate content by emotional state:</p>
+<p>🔵 Blue when they’re spiraling, 🔴 Red when they’re rebellious, 🟡 Yellow when they need confidence.</p>
+<p>Working on that made me realize: emotions aren’t linear, and content doesn’t hit everyone the same way.</p>
+<p>So why not let users shape their emotional navigation actively?</p>
+<p>Spotify could be more than a discovery engine.</p>
+<p>It could be a <strong>memory companion</strong>, one that not only delivers great content,</p>
+<p>but also holds space for <em>how it made you feel when it found you.</em></p>
+<hr />
+<h2 id="potential-long-term-impact">Potential Long-Term Impact</h2>
+<ul>
+<li><p>Turn emotions into metadata that bridges Spotify's verticals (music, podcasts, audiobooks)</p></li>
+<li><p>Creates an emotion-first layer of discovery that’s more human than genre or artist-centric filters</p></li>
+<li><p>Unlocks new surfaces for monetization (e.g., mood-based ad targeting, emotion-aware premium playlists)</p></li>
+<li><p>Improve creator tools that help artists/podcasters tag their own content by emotion, and reach the right audiences accordingly.</p>
+<p>Creators get engagement metrics (like skips, plays, saves), but they don't get insight into how their audience actually feels. This idea could potentially provide emotion-first metadata that both Spotify and creators can use to personalize content strategy, audience outreach, and catalog tagging.</p></li>
+</ul>
+<hr />
+<h2 id="final-thoughts">Final thoughts</h2>
+<p>This is still just a thought exercise, but it’s grounded in the way I build.</p>
+<p>I like solving for <em>how it feels</em>, not just <em>what it does</em>.If there’s a world where Spotify helps users tag their own emotional experiences, build a space around them, and discover meaning as much as music, I’d love to help design it :)</p>
+<p>P.S. I could give you a glimpse of my framework for my personal project called</p>
+<p><em>POV: The Vibe Compass</em></p>
+<p>.Although this framework maps colours with emotions. My idea for Spotify is to map mood/emotions with music.</p>
+<p><a href="https://lh7-rt.googleusercontent.com/docsz/AD_4nXdFn-jAPakejfqY3Smg_qq5aLmGP0cqr3BXEuAEaQ8SXQX77tF82W8WeVw-pveVJ4c8EX5xBoDYSOIqjR-UTHZ9b9jlqcvC7KlfNJ2Srx6Lz87jZehA0_xZVPk5nSuMGSXLgAyblA?key=XS9Wu0vnRXrk8hI_mkeHOw"></a></p>
+
+  </article>
+  <footer>© 2026 Uma Lamba · <a href="mailto:uma.lamba59@gmail.com">uma.lamba59@gmail.com</a> · <a href="https://www.linkedin.com/in/umalamba/">LinkedIn</a></footer>
+</div>
+</body>
+</html>
