@@ -25,67 +25,64 @@
   <nav aria-label="Main">
     <a class="name" href="index.html">Uma Lamba</a>
     <ul>
+      <li><a href="index.html">Home</a></li>
       <li><a href="about-me.html">About</a></li>
       <li><a href="projects.html">Projects</a></li>
       <li><a href="pm-diaries.html">PM Diaries</a></li>
       <li><a href="Uma_Lamba_Resume.pdf">Resume</a></li>
     </ul>
   </nav>
+  <a class="back" href="index.html">← Home</a>
   <header class="page-head">
     <h1>📝 PM Diaries</h1>
     <p class="lede">Some wins. Some flops. All lessons. This is where I document the things that shifted how I build, reflect, and navigate product work, from “what on earth!?” to “ohh that’s why” moments no course ever taught me.</p>
   </header>
-  <div class="prose">
-<div class="diary"><h3>Graph Programming Camp</h3><p><strong>📌 Insight/Lesson:</strong></p>
-<p>Not Every User Interaction Deserves the Energy It Demands</p>
-<p><strong>🧠 What happened:</strong></p>
+  <div class="diary-filters tabs" role="group" aria-label="Filter by where it happened"><button type="button" class="tab" aria-pressed="true" data-cat="all">All <span class="count">11</span></button><button type="button" class="tab" aria-pressed="false" data-cat="graph-programming-camp">Graph Programming Camp <span class="count">4</span></button><button type="button" class="tab" aria-pressed="false" data-cat="internship">Internship <span class="count">4</span></button><button type="button" class="tab" aria-pressed="false" data-cat="future-agi">Future AGI <span class="count">1</span></button><button type="button" class="tab" aria-pressed="false" data-cat="the-vibe-compass">The Vibe Compass <span class="count">2</span></button></div>
+  <div class="carousel-bar">
+    <span class="diary-hint">Swipe, scroll or use the arrows.</span>
+    <div class="carousel-controls">
+      <span class="carousel-count" id="diary-count" aria-live="polite"></span>
+      <button type="button" class="arrow" id="diary-prev" aria-label="Previous lesson">←</button>
+      <button type="button" class="arrow" id="diary-next" aria-label="Next lesson">→</button>
+    </div>
+  </div>
+  <div class="diary-track" id="diary-track" tabindex="0" aria-label="PM Diaries lessons">
+<article class="diary-card" data-cat="graph-programming-camp"><span class="ptag p-purple">Graph Programming Camp</span><h3 class="diary-lesson">📌 Not Every User Interaction Deserves the Energy It Demands</h3><div class="diary-text"><p><strong>🧠 What happened:</strong></p>
 <p>Some students approached me straight-up rude about not being shortlisted to the bootcamp. Spoiler: they never signed up. At first, I was mad. But then I realized I couldn’t match their energy. So I kept it calm, factual, and polite, even though it took <em>every ounce of patience</em> I had.</p>
 <p><strong>🎯 Takeaway:</strong></p>
 <p>In ops and product, not every frustration needs a reaction.</p>
 <p>Sometimes, being polite isn’t about being nice it’s about being <strong>strategic.</strong></p>
 <p>Keep your cool, protect your energy, and never let someone else's bad day mess with your professionalism.</p>
-</div>
-<div class="diary"><h3>Graph Programming Camp</h3><p><strong>📌 Insight/Lesson:</strong> Always Talk to the User, Not Just the Stakeholder</p>
-<p><strong>🧠 What happened:</strong> During the onboarding phase of the bootcamp, I got the go-ahead from the placement POC and started onboarding colleges, all smooth on paper. Except... I hadn’t double-checked with students about their internal schedules. Turns out, many had exams… students messaged me <em>after</em> onboarding saying they had exams that week. The whole thing had to be postponed and recommunicated. It was chaos.</p>
+</div></article>
+<article class="diary-card" data-cat="graph-programming-camp"><span class="ptag p-purple">Graph Programming Camp</span><h3 class="diary-lesson">📌 Always Talk to the User, Not Just the Stakeholder</h3><div class="diary-text"><p><strong>🧠 What happened:</strong> During the onboarding phase of the bootcamp, I got the go-ahead from the placement POC and started onboarding colleges, all smooth on paper. Except... I hadn’t double-checked with students about their internal schedules. Turns out, many had exams… students messaged me <em>after</em> onboarding saying they had exams that week. The whole thing had to be postponed and recommunicated. It was chaos.</p>
 <p><strong>🎯 Takeaway:</strong></p>
 <p>Don’t assume top-down approval = ground-level readiness.</p>
 <p>Always cross-check with the actual users, not just the stakeholders/gatekeepers.</p>
-</div>
-<div class="diary"><h3>Graph Programming Camp</h3><p><strong>📌 Insight/Lesson:</strong></p>
-<p>Feedback Isn’t One-Size-Fits-All</p>
-<p><strong>🧠 What happened:</strong> After the camp, I reached out to students for feedback, but not everyone responded, and those who did didn’t always give usable info. That’s when I realized: you can’t copy-paste your ask across all users and expect results. Understanding the concept, Different segments, different language, different tone, and different <em>approach helped.</em></p>
+</div></article>
+<article class="diary-card" data-cat="graph-programming-camp"><span class="ptag p-purple">Graph Programming Camp</span><h3 class="diary-lesson">📌 Feedback Isn’t One-Size-Fits-All</h3><div class="diary-text"><p><strong>🧠 What happened:</strong> After the camp, I reached out to students for feedback, but not everyone responded, and those who did didn’t always give usable info. That’s when I realized: you can’t copy-paste your ask across all users and expect results. Understanding the concept, Different segments, different language, different tone, and different <em>approach helped.</em></p>
 <p><strong>🎯 Takeaway:</strong></p>
 <p>Feedback isn’t just about asking — it’s about <em>how</em> you ask.</p>
 <p>Mix and match formats, tones, and timing based on the user you're talking to.</p>
 <p>Personalization doesn’t mean it requires extra effort. It’s just a <em>smart strategy.</em></p>
-</div>
-<div class="diary"><h3>Graph Programming Camp</h3><p><strong>📌 Insight/Lesson:</strong></p>
-<p>Stick to the plan and always have a plan B in case of events involving huge numbers.</p>
-<p><strong>🧠 What happened:</strong> I was supposed to cross-check and ensure the students get their participation certificates according to their attendance, but in the end, I couldn’t handle the large crowd of students (at the offline event) on my own and ended up giving away wrong certificates and double to some students.</p>
+</div></article>
+<article class="diary-card" data-cat="graph-programming-camp"><span class="ptag p-purple">Graph Programming Camp</span><h3 class="diary-lesson">📌 Stick to the plan and always have a plan B in case of events involving huge numbers.</h3><div class="diary-text"><p><strong>🧠 What happened:</strong> I was supposed to cross-check and ensure the students get their participation certificates according to their attendance, but in the end, I couldn’t handle the large crowd of students (at the offline event) on my own and ended up giving away wrong certificates and double to some students.</p>
 <p><strong>🎯 Takeaway:</strong></p>
 <p>Check your boxes beforehand while facing the users/students, in this case, directly. Always have a backup plan, assuming the worst-case scenario. In this case, I should have taken the help of my colleague while giving away the certificates and collectibles.</p>
-</div>
-<div class="diary"><h3>Internship</h3><p><strong>📌 Insight/Lesson:</strong></p>
-<p>Communication Isn't Just Updates — It's Emotion Too</p>
-<p><strong>🧠 What happened:</strong> I <em>thought</em> I was communicating. Task updates? ✅. Timelines? ✅. But under the surface, I was overwhelmed, confused, and low-key burnt out and I didn’t say a word. That led to some real misalignments with my manager, where my silence got read as “all good,” when I was very much <em>not</em> all good.</p>
+</div></article>
+<article class="diary-card" data-cat="internship"><span class="ptag p-purple">Internship</span><h3 class="diary-lesson">📌 Communication Isn't Just Updates — It's Emotion Too</h3><div class="diary-text"><p><strong>🧠 What happened:</strong> I <em>thought</em> I was communicating. Task updates? ✅. Timelines? ✅. But under the surface, I was overwhelmed, confused, and low-key burnt out and I didn’t say a word. That led to some real misalignments with my manager, where my silence got read as “all good,” when I was very much <em>not</em> all good.</p>
 <p><strong>🎯 Takeaway:</strong></p>
 <p>Communication isn’t just logistical, it’s emotional. Be honest about how you're doing, not just what you're doing. People can’t support what they don’t know exists.</p>
-</div>
-<div class="diary"><h3>Internship</h3><p><strong>📌 Insight/Lesson:</strong> Asking for Help <em>Before</em> You're Drowning is Smart and doesn’t make you look dumb. It’s ok to ask for help and figure out stuff.</p>
-<p><strong>🧠 What happened:</strong></p>
+</div></article>
+<article class="diary-card" data-cat="internship"><span class="ptag p-purple">Internship</span><h3 class="diary-lesson">📌 Asking for Help <em>Before</em> You're Drowning is Smart and doesn’t make you look dumb. It’s ok to ask for help and figure out stuff.</h3><div class="diary-text"><p><strong>🧠 What happened:</strong></p>
 <p>I used to overthink every tiny question before asking it on Slack. I'd rewrite the message five times, question if it was “worth their time,” and then just... not send it. I thought “I’ll figure it out” made me independent. In reality? I wasted hours, delayed progress, and isolated myself for no reason.</p>
 <p><strong>🎯 Takeaway:</strong></p>
 <p>Normalize asking questions before confusion becomes a roadblock.</p>
 <p>Asking early can sometimes mean working smarter, not harder, given you do your research, and yet if you have confusion.</p>
-</div>
-<div class="diary"><h3>Internship</h3><p><strong>📌 Insight/Lesson:</strong></p>
-<p>Don’t Wait to Be Told What You’re Allowed to Learn</p>
-<p><strong>🧠 What happened:</strong> In the beginning, I got comfortable doing what I was assigned: resume-making and communicating with the students about the JobOverflow platform. I assumed if I was <em>meant</em> to explore product strategy, growth, or user research, someone would hand it to me. Spoiler: they didn’t. And by the time I realized I could’ve just started exploring and asking, months had passed.</p>
+</div></article>
+<article class="diary-card" data-cat="internship"><span class="ptag p-purple">Internship</span><h3 class="diary-lesson">📌 Don’t Wait to Be Told What You’re Allowed to Learn</h3><div class="diary-text"><p><strong>🧠 What happened:</strong> In the beginning, I got comfortable doing what I was assigned: resume-making and communicating with the students about the JobOverflow platform. I assumed if I was <em>meant</em> to explore product strategy, growth, or user research, someone would hand it to me. Spoiler: they didn’t. And by the time I realized I could’ve just started exploring and asking, months had passed.</p>
 <p><strong>🎯 Takeaway:</strong> You don’t need permission to upskill. Own your curiosity. Upskill and choose growth both <em>professionally and personally</em></p>
-</div>
-<div class="diary"><h3>Internship</h3><p><strong>📌 Insight/Lesson:</strong></p>
-<p>Check if you’ve attached the documents. And for the love of clarity, track the email. 😑</p>
-<p><strong>🧠 What happened:</strong> I used to send emails and just… Hope <em>for the best</em>. No tracking, which led to awkward follow-ups on calls like, “Hey… did you check that email I sent?”, which didn’t leave a good impression on the other end. That’s when I realized: sending is just half the job. Knowing <em>when</em>, <em>if</em>, and <em>how</em> people respond? That’s the real management skill.</p>
+</div></article>
+<article class="diary-card" data-cat="internship"><span class="ptag p-purple">Internship</span><h3 class="diary-lesson">📌 Check if you’ve attached the documents. And for the love of clarity, track the email. 😑</h3><div class="diary-text"><p><strong>🧠 What happened:</strong> I used to send emails and just… Hope <em>for the best</em>. No tracking, which led to awkward follow-ups on calls like, “Hey… did you check that email I sent?”, which didn’t leave a good impression on the other end. That’s when I realized: sending is just half the job. Knowing <em>when</em>, <em>if</em>, and <em>how</em> people respond? That’s the real management skill.</p>
 <p><strong>🎯 Takeaway:</strong></p>
 <p>Treat emails like mini-projects:</p>
 <ul>
@@ -94,25 +91,67 @@
 <li>Set reminders to follow up</li>
 <li>Don’t rely on memory; build a system to track these emails.</li>
 </ul>
-</div>
-<div class="diary"><h3>Future AGI</h3><p><strong>📌 Insight/Lesson:</strong> Always think 10 steps ahead, or at least don’t just do whatever is told. Ask yourself questions. Ask your colleagues, but don’t expect hand-holding. Just because your work is expected in a certain format, it’s totally ok to add your points and style of work, take feedback, and iterate.</p>
-<p><strong>🧠 What happened:</strong> I was given a task to create a master customer list from a DB, and I learnt the ICPs for FAGI, but the way I filtered and collected was not “impressive” or more like “maza nhi aya” to the person I was reporting. So what actually happened there was I made a basic sheet like literally the data to show and get feedback for the small part I did, but that person was expecting the final polished shiny sheet with datapoints and “insights” and I was sent back with the feedbacksaying “I didnt really understand the task in the first place, should have asked for more information and doubts when the task was given”</p>
+</div></article>
+<article class="diary-card" data-cat="future-agi"><span class="ptag p-purple">Future AGI</span><h3 class="diary-lesson">📌 Always think 10 steps ahead, or at least don’t just do whatever is told. Ask yourself questions. Ask your colleagues, but don’t expect hand-holding. Just because your work is expected in a certain format, it’s totally ok to add your points and style of work, take feedback, and iterate.</h3><div class="diary-text"><p><strong>🧠 What happened:</strong> I was given a task to create a master customer list from a DB, and I learnt the ICPs for FAGI, but the way I filtered and collected was not “impressive” or more like “maza nhi aya” to the person I was reporting. So what actually happened there was I made a basic sheet like literally the data to show and get feedback for the small part I did, but that person was expecting the final polished shiny sheet with datapoints and “insights” and I was sent back with the feedbacksaying “I didnt really understand the task in the first place, should have asked for more information and doubts when the task was given”</p>
 <p><strong>🎯 Takeaway: MENTION.NOT ONCE. BUT TWICE AND THRICE IF REQUIRED about what you are about to show and take feedback for + always make sure to show what you think also, along with what is expected, like if you are thinking 1 step ahead, showcase that in your work. Don’t wait for your manager to say something about it magically.NOPE.NOT CUTE.</strong></p>
-</div>
-<div class="diary"><h3>The Vibe Compass</h3><p><strong>📌 Insight/Lesson:</strong></p>
-<p>If You Don’t Close Loops, People Spiral</p>
-<p><strong>🧠 What happened:</strong> While scripting the “Blue” episode, I realized: spiraling happens when the brain opens loops it can’t close. That’s not just an emotional insight , that’s a <em>product principle</em>. People spiral in apps, too: if a page doesn’t tell them what’s next, they drop off. If an action doesn’t resolve, they feel stuck.</p>
+</div></article>
+<article class="diary-card" data-cat="the-vibe-compass"><span class="ptag p-purple">The Vibe Compass</span><h3 class="diary-lesson">📌 If You Don’t Close Loops, People Spiral</h3><div class="diary-text"><p><strong>🧠 What happened:</strong> While scripting the “Blue” episode, I realized: spiraling happens when the brain opens loops it can’t close. That’s not just an emotional insight , that’s a <em>product principle</em>. People spiral in apps, too: if a page doesn’t tell them what’s next, they drop off. If an action doesn’t resolve, they feel stuck.</p>
 <p><strong>🎯 Takeaway:</strong></p>
 <p>Emotional design = closing loops. Always show what’s next. End with clarity. End with calm.</p>
-</div>
-<div class="diary"><h3>The Vibe Compass</h3><p><strong>📌 Insight/Lesson:</strong></p>
-<p>Sometimes “Done” Means Letting It Go</p>
-<p><strong>🧠 What happened:</strong> I kept tweaking the freebie design and YouTube script, telling myself it “wasn’t ready.” But deep down, I was scared to let people <em>see</em> it. I realized perfectionism was just fear dressed in Canva fonts.</p>
+</div></article>
+<article class="diary-card" data-cat="the-vibe-compass"><span class="ptag p-purple">The Vibe Compass</span><h3 class="diary-lesson">📌 Sometimes “Done” Means Letting It Go</h3><div class="diary-text"><p><strong>🧠 What happened:</strong> I kept tweaking the freebie design and YouTube script, telling myself it “wasn’t ready.” But deep down, I was scared to let people <em>see</em> it. I realized perfectionism was just fear dressed in Canva fonts.</p>
 <p><strong>🎯 Takeaway:</strong></p>
 <p>Done &gt; perfect. Feedback is more valuable than your anxiety’s opinion.</p>
-</div>
+</div></article>
 
   </div>
+<script>
+(function () {
+  var track = document.getElementById("diary-track"), chips = document.querySelectorAll(".diary-filters .tab");
+  var prev = document.getElementById("diary-prev"), next = document.getElementById("diary-next"), counter = document.getElementById("diary-count");
+  var calm = window.matchMedia("(prefers-reduced-motion: reduce)").matches, last = -1;
+  function visible() { return [].filter.call(track.querySelectorAll(".diary-card"), function (c) { return !c.hidden; }); }
+  function step() { var c = visible()[0]; return c ? c.getBoundingClientRect().width + 16 : 300; }
+  function enter() {
+    if (calm) return;
+    visible().forEach(function (c, i) {
+      c.classList.remove("enter"); void c.offsetWidth;
+      c.style.animationDelay = Math.min(i, 5) * 70 + "ms";
+      c.classList.add("enter");
+    });
+  }
+  function update() {
+    var cards = visible(), max = track.scrollWidth - track.clientWidth - 2;
+    var idx = Math.min(cards.length - 1, Math.round(track.scrollLeft / step()));
+    if (track.scrollLeft >= max && cards.length) idx = cards.length - 1 - Math.max(0, Math.floor(track.clientWidth / step()) - 1);
+    cards.forEach(function (c, i) { c.classList.toggle("is-active", i === Math.max(0, Math.round(track.scrollLeft / step()))); });
+    var n = cards.length ? Math.min(cards.length, Math.round(track.scrollLeft / step()) + 1) : 0;
+    counter.textContent = n + " / " + cards.length;
+    if (n !== last && !calm) { counter.classList.remove("tick"); void counter.offsetWidth; counter.classList.add("tick"); }
+    last = n;
+    prev.disabled = track.scrollLeft <= 2;
+    next.disabled = track.scrollLeft >= max;
+  }
+  function go(dir) { track.scrollBy({ left: dir * step(), behavior: calm ? "auto" : "smooth" }); }
+  prev.addEventListener("click", function () { go(-1); });
+  next.addEventListener("click", function () { go(1); });
+  track.addEventListener("scroll", function () { window.requestAnimationFrame(update); });
+  track.addEventListener("animationend", function (e) { if (e.target.classList) e.target.classList.remove("enter"); });
+  track.addEventListener("keydown", function (e) {
+    if (e.key === "ArrowRight") { e.preventDefault(); go(1); }
+    if (e.key === "ArrowLeft") { e.preventDefault(); go(-1); }
+  });
+  window.addEventListener("resize", update);
+  chips.forEach(function (c) {
+    c.addEventListener("click", function () {
+      chips.forEach(function (x) { x.setAttribute("aria-pressed", x === c); });
+      track.querySelectorAll(".diary-card").forEach(function (it) { it.hidden = !(c.dataset.cat === "all" || it.dataset.cat === c.dataset.cat); });
+      track.scrollLeft = 0; update(); enter();
+    });
+  });
+  update(); enter();
+})();
+</script>
   <footer>© 2026 Uma Lamba · <a href="mailto:uma.lamba59@gmail.com">uma.lamba59@gmail.com</a> · <a href="https://www.linkedin.com/in/umalamba/">LinkedIn</a></footer>
 </div>
 <script>
