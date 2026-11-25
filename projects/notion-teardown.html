@@ -9,45 +9,56 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../style.css">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Uma Lamba">
+<meta property="og:title" content="Product Teardown - Notion · Uma Lamba">
+<meta property="og:description" content="A product teardown of Notion based on my real usage, proposing three scalable improvements :block-level analytics, stale page detection, and mood-based themes, to enhance clarity, collaboration, and emotional UX. Built as a self-initiated case study to showcase product thinking.">
+<meta property="og:image" content="https://portfolio-uma-lamba.vercel.app/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://portfolio-uma-lamba.vercel.app/og-image.png">
 </head>
 <body>
 <div class="wrap">
   <nav aria-label="Main">
     <a class="name" href="../index.html">Uma Lamba</a>
     <ul>
-      <li><a href="../index.html#about">About</a></li>
-      <li><a href="../index.html#projects">Projects</a></li>
+      <li><a href="../about-me.html">About</a></li>
+      <li><a href="../projects.html">Projects</a></li>
       <li><a href="../pm-diaries.html">PM Diaries</a></li>
       <li><a href="../Uma_Lamba_Resume.pdf">Resume</a></li>
     </ul>
   </nav>
-  <a class="back" href="../index.html#projects">← All projects</a>
+  <a class="back" href="../projects.html">← All projects</a>
   <header class="page-head">
     <h1>Product Teardown - Notion</h1>
     <p class="lede">A product teardown of Notion based on my real usage, proposing three scalable improvements :block-level analytics, stale page detection, and mood-based themes, to enhance clarity, collaboration, and emotional UX. Built as a self-initiated case study to showcase product thinking.</p>
-    <div class="meta"><span class="tag">Product Sense</span><span class="tag">1 week</span></div>
   </header>
+  <div class="page-cover"><img src="https://images.icon-icons.com/3053/PNG/96/notion_alt_macos_bigsur_icon_189899.png" alt="" referrerpolicy="no-referrer" onerror="this.parentNode.remove()"></div>
+  <div class="props"><div class="prop"><div class="prop-k">Category</div><div class="prop-v"><span class="ptag p-purple">Personal</span></div></div><div class="prop"><div class="prop-k">Time to complete</div><div class="prop-v">1 week</div></div><div class="prop"><div class="prop-k">TYPE</div><div class="prop-v"><span class="ptag p-peach">Product Sense</span></div></div></div>
   <article class="prose">
 <h2 id="ℹ️-about-the-project">ℹ️ About the project</h2>
-<div class="callout">
+<div class="callout"><div class="callout-body">
 
 <p>This was a video-first product critique submitted as part of a product hiring challenge. The goal was to highlight a tool I use regularly, identify real user friction, and suggest actionable product improvements grounded in behavior, context, and design empathy.</p>
 <p>I chose Notion, a product I use every single day for everything from my portfolio and content system to personal task tracking and collaborative workspaces. The prompt was open-ended, but I treated it like a product thinking case study: start from user pain, connect it to product behavior, and propose improvements that scale from individual users to teams.</p>
 <p>All of the following suggestions are based on real moments of friction I’ve experienced while using Notion for solo and collaborative work. These are not UI tweaks, they’re workflow-centric, emotion-aware product shifts that could unlock better collaboration and decision-making at scale.</p>
 <p><strong>Disclaimer</strong>: This was not a commissioned case study or consulting project for Notion. These ideas were proposed independently, as part of a product evaluation exercise.</p>
-</div>
+</div></div>
 
 <hr />
 <h2 id="-timeline-and-context">🚀 Timeline and Context</h2>
-<div class="callout">
+<div class="callout"><div class="callout-body">
 
 <p>This case study was structured as a short 2-minute product teardown. I recorded, edited, and narrated a video that included three detailed product improvement proposals. Each idea mapped to a key moment of user friction that I’ve personally felt while using Notion.</p>
 <p>Rather than making surface-level suggestions, I focused on changes that would improve clarity, speed up collaboration, and make the product feel more alive and emotionally intelligent, especially in remote team contexts.</p>
-</div>
+</div></div>
 
 <hr />
 <h2 id="1️⃣-block-level-analytics">1️⃣ Block-Level Analytics</h2>
-<div class="callout">
+<div class="callout"><div class="callout-body">
 
 <p>The first improvement I proposed is block-level analytics,a native way to understand not just how many people visited a page, but what they actually engaged with inside the page.</p>
 <p>Currently, Notion’s built-in analytics are extremely limited. For my portfolio, I can only see total and unique page views. That data doesn’t help me understand user behavior. Did someone scroll through my case studies? Did they click my LinkedIn? Did they spend time reading or bounce after the intro?</p>
@@ -56,11 +67,11 @@
 <p>For creators, this feedback loop would be game-changing. You’d instantly know what content resonates, what to amplify, and what to drop.</p>
 <p>For remote teams, this means faster alignment. Instead of relying on passive comments or wondering if anyone saw a doc, you’d have visibility into what was reviewed.</p>
 <p>Block-level analytics would transform Notion from a static canvas into a feedback-aware workspace, essential for async collaboration and decision-making.</p>
-</div>
+</div></div>
 
 <hr />
 <h2 id="2️⃣stale-page-detector">2️⃣Stale Page Detector</h2>
-<div class="callout">
+<div class="callout"><div class="callout-body">
 
 <p>The second feature I proposed is what I called a Stale Page Detector or more simply, an automatic way to surface forgotten or outdated content.</p>
 <p>In every Notion workspace, clutter accumulates over time. Pages get created, reused, duplicated, and eventually abandoned. My workspace has templates I haven’t touched in months. Some of them I don’t even remember creating.</p>
@@ -70,11 +81,11 @@
 <p>This prompt could be toggled on or off, or adjusted per workspace. It could be layered with metadata like last-viewed-by, last-commented, or linked-to-from-where.</p>
 <p>For solo users, it’s a gentle nudge to keep things tidy. For teams, it’s a scalable system for keeping knowledge management relevant, searchable, and aligned with current workflows.</p>
 <p>This isn’t just about visual cleanup. It’s about reducing decision fatigue, avoiding duplicated work, and keeping the team focused on what matters now, not what was built three roadmaps ago.</p>
-</div>
+</div></div>
 
 <hr />
 <h2 id="3️⃣mood-based-team-themes">3️⃣Mood-Based Team Themes</h2>
-<div class="callout">
+<div class="callout"><div class="callout-body">
 
 <p>The third improvement I proposed is a bit more unconventional, but I think deeply relevant to remote team dynamics: mood-based workspace themes.</p>
 <p>The core idea is that productivity isn’t just about features. It’s about how you feel in the space you’re working in. Especially in remote or hybrid teams, the emotional tone of a digital workspace can really affect focus and flow.</p>
@@ -90,27 +101,27 @@
 <p>The experience becomes more immersive, contextual, and emotionally tuned to the task at hand.</p>
 <p>Importantly, this wouldn’t break team alignment. Each user could have a personal view, while the workspace still follows a central theme set by the team lead or project manager.</p>
 <p>This small shift would help people feel more connected to the workspace and to each other, not just as collaborators, but as humans sharing a creative environment.</p>
-</div>
+</div></div>
 
 <hr />
 <h2 id="outcomes-and-reflections">Outcomes and Reflections</h2>
-<div class="callout">
+<div class="callout"><div class="callout-body">
 
 <p>This wasn’t a live product improvement project, but a rapid critique built to showcase product thinking. What I learned from structuring it this way:</p>
 <p>A good feature isn’t just solving a problem, it’s answering <em>why now</em>, <em>for whom</em>, and <em>how often this hurts</em>. Block analytics solve uncertainty. Stale page detection solves distraction. Mood toggles solve emotional disconnection in digital spaces.</p>
 <p>These aren’t edge cases. These are deeply felt problems hiding in plain sight — and they scale across solo users, creators, and global teams.</p>
 <p>My biggest takeaway was that great product ideas often come from lived experience, not hypotheticals. The features I proposed weren’t imagined in a vacuum. They came from hitting the same friction points over and over until I decided to map them out, name them, and reimagine how they could work better.</p>
-</div>
+</div></div>
 
 <hr />
 <h2 id="visual-assets">Visual Assets</h2>
-<div class="callout">
+<div class="callout"><div class="callout-body">
 
 <p>This video was recorded, edited, and written by me. It was built to reflect both product understanding and storytelling.</p>
 <p><strong>🎥 Video:</strong></p>
 <p><a href="https://drive.google.com/file/d/17B8UX5n1XbcOYLUf-Jm99wzvAUYNYyuH/view?usp=sharing">Notion Product Improvement Teardown</a></p>
 <p>This includes voiceover, story-led examples, and walkthroughs of each idea in action.</p>
-</div>
+</div></div>
 
   </article>
   <footer>© 2026 Uma Lamba · <a href="mailto:uma.lamba59@gmail.com">uma.lamba59@gmail.com</a> · <a href="https://www.linkedin.com/in/umalamba/">LinkedIn</a></footer>
