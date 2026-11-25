@@ -33,9 +33,15 @@
   </nav>
   <a class="back" href="index.html">← Home</a>
   <header class="page-head"><h1>📚 Projects</h1></header>
-  <section aria-labelledby="b-h"><h2 id="b-h">🛠️ Things I've built</h2><div class="projects">
+  <section>
+    <div class="tabs" role="tablist" aria-label="Project types">
+      <button type="button" class="tab" role="tab" id="t-built" aria-controls="p-built" aria-selected="true" data-tab="built">🛠️ Things I've built <span class="count">4</span></button>
+      <button type="button" class="tab" role="tab" id="t-deep-dives" aria-controls="p-deep-dives" aria-selected="false" tabindex="-1" data-tab="deep-dives">🔍 Internship deep dives <span class="count">4</span></button>
+      <button type="button" class="tab" role="tab" id="t-case-studies" aria-controls="p-case-studies" aria-selected="false" tabindex="-1" data-tab="case-studies">📚 Case studies &amp; teardowns <span class="count">6</span></button>
+    </div>
+    <div class="tabpanel" role="tabpanel" id="p-built" aria-labelledby="t-built"><div class="projects">
       <article class="card">
-        
+        <div class="card-cover"><img src="assets/covers/draft-check.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentNode.remove()"></div>
         <span class="tag">Live tool · AI</span>
         <h3>Draft Check</h3>
         <p>SEO tools overwhelm non-specialist writers. Draft Check turns the checklist behind our team&#x27;s 22x organic growth into a pre-publish checker: 7 rule checks plus 6 Gemini-judged checks, validated against a hand-labeled golden set.</p>
@@ -66,10 +72,10 @@
         
         <div class="links"><a href="projects/vibe-compass.html" class="stretch">Read more →</a></div>
       </article>
-</div></section>
-  <section aria-labelledby="w-h"><h2 id="w-h">🔍 Deep dives from my internships</h2><div class="projects">
+</div></div>
+    <div class="tabpanel" role="tabpanel" id="p-deep-dives" aria-labelledby="t-deep-dives" hidden><div class="projects">
       <article class="card">
-        
+        <div class="card-cover"><img src="assets/covers/algouniversity-apm-internship.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentNode.remove()"></div>
         <span class="tag">Internship</span>
         <h3>AlgoUniversity APM internship</h3>
         <p>Seven months as an APM intern: bootcamps, research, funnels and the work behind the Graph Programming Camp.</p>
@@ -100,8 +106,8 @@
         
         <div class="links"><a href="projects/account-based-marketing.html" class="stretch">Read →</a></div>
       </article>
-</div></section>
-  <section aria-labelledby="c-h"><h2 id="c-h">📚 Case studies and teardowns</h2><div class="projects">
+</div></div>
+    <div class="tabpanel" role="tabpanel" id="p-case-studies" aria-labelledby="t-case-studies" hidden><div class="projects">
       <article class="card">
         <div class="card-cover"><img src="https://images.icon-icons.com/3053/PNG/96/notion_alt_macos_bigsur_icon_189899.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentNode.remove()"></div>
         <span class="tag">Product teardown</span>
@@ -150,8 +156,43 @@
         
         <div class="links"><a href="projects/algouniversity-gtm.html" class="stretch">Read →</a></div>
       </article>
-</div></section>
+</div></div>
+  </section>
+  <script>
+  (function () {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll(".tab"));
+    function show(name, focus) {
+      tabs.forEach(function (t) {
+        var on = t.dataset.tab === name;
+        t.setAttribute("aria-selected", on); t.tabIndex = on ? 0 : -1;
+        document.getElementById("p-" + t.dataset.tab).hidden = !on;
+        if (on && focus) t.focus();
+      });
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener("click", function () { show(t.dataset.tab); history.replaceState(null, "", "#" + t.dataset.tab); });
+      t.addEventListener("keydown", function (e) {
+        var d = e.key === "ArrowRight" ? 1 : e.key === "ArrowLeft" ? -1 : 0;
+        if (d) { var n = tabs[(i + d + tabs.length) % tabs.length]; show(n.dataset.tab, true); history.replaceState(null, "", "#" + n.dataset.tab); }
+      });
+    });
+    var h = location.hash.slice(1);
+    if (h && document.getElementById("p-" + h)) show(h);
+  })();
+  </script>
   <footer>© 2026 Uma Lamba · <a href="mailto:uma.lamba59@gmail.com">uma.lamba59@gmail.com</a> · <a href="https://www.linkedin.com/in/umalamba/">LinkedIn</a></footer>
 </div>
+<script>
+/* Many browsers have no mail app set up, so a plain mailto link seems to do nothing.
+   Copy the address first and say so, then still try to open the mail app. */
+document.addEventListener("click", function (e) {
+  var a = e.target.closest("a.email-btn");
+  if (!a) return;
+  var email = "uma.lamba59@gmail.com", label = a.textContent;
+  try { navigator.clipboard.writeText(email); } catch (err) {}
+  a.textContent = "Copied: " + email;
+  setTimeout(function () { a.textContent = label; }, 2500);
+});
+</script>
 </body>
 </html>
