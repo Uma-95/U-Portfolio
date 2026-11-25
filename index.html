@@ -35,19 +35,19 @@
     <div class="keys" aria-label="Ctrl plus Alt plus Product">
       <span class="key">Ctrl</span><span class="plus">+</span><span class="key">Alt</span><span class="plus">+</span><span class="key accent">Product</span>
     </div>
-    <h1 class="h1-story">Hi, I'm Uma. I figure out what <em>users</em> need, then help build it, launch it and grow it.</h1>
-    <p class="lede">Product generalist · edtech, creator and AI startups · Bengaluru</p>
+    <h1>Great products start with <em>users</em>, not features.</h1>
+    <p class="lede">Product generalist · edtech, creator and AI startups</p>
     <div class="ctas">
       <a class="btn primary" href="Uma_Lamba_Resume.pdf">View resume</a>
       <a class="btn teal" href="https://www.linkedin.com/in/umalamba/">LinkedIn</a>
-      <a class="btn pink" href="mailto:uma.lamba59@gmail.com">Email me</a>
+      <a class="btn pink email-btn" href="mailto:uma.lamba59@gmail.com">Email me</a>
     </div>
   </header>
 
   <section aria-labelledby="about-h">
     <a class="about-tile" href="about-me.html">
       <h2 id="about-h">👋 Who I am</h2>
-      <p>It all started with college fests: pulling off events, managing club juniors, and making sure nothing fell apart five minutes before go-time. That behind-the-scenes chaos turned into a curiosity I never got over: why do some things just <em>work</em>?</p>
+      <p>Hi, I'm Uma. I figure out what users need, then help build it, launch it and grow it. I'm a product person at heart, and a bit of everything by experience. I've been the writer, the marketer, the researcher, the outreach person and the builder, and every one of those roles made me better at the one I love most: shaping products around real users.</p>
       <span class="tile-more">Read my full story &amp; timeline →</span>
     </a>
   </section>
@@ -197,12 +197,24 @@
     <h2 id="contact-h">📩 Let's connect</h2>
     <p>Always happy to talk about funnels, evals, or a product you love.</p>
     <div class="ctas">
-      <a class="btn primary" href="mailto:uma.lamba59@gmail.com">uma.lamba59@gmail.com</a>
+      <a class="btn primary email-btn" href="mailto:uma.lamba59@gmail.com">uma.lamba59@gmail.com</a>
       <a class="btn teal" href="https://www.linkedin.com/in/umalamba/">LinkedIn</a>
       <a class="btn pink" href="https://github.com/Uma-95">GitHub</a>
     </div>
   </section>
   <footer>© 2026 Uma Lamba · <a href="mailto:uma.lamba59@gmail.com">uma.lamba59@gmail.com</a> · <a href="https://www.linkedin.com/in/umalamba/">LinkedIn</a></footer>
 </div>
+<script>
+/* Many browsers have no mail app set up, so a plain mailto link seems to do nothing.
+   Copy the address first and say so, then still try to open the mail app. */
+document.addEventListener("click", function (e) {
+  var a = e.target.closest("a.email-btn");
+  if (!a) return;
+  var email = "uma.lamba59@gmail.com", label = a.textContent;
+  try { navigator.clipboard.writeText(email); } catch (err) {}
+  a.textContent = "Copied: " + email;
+  setTimeout(function () { a.textContent = label; }, 2500);
+});
+</script>
 </body>
 </html>

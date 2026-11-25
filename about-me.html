@@ -34,7 +34,7 @@
   <a class="back" href="index.html">← Home</a>
   <header class="page-head"><h1>👋 About Me</h1></header>
   <article class="prose">
-<h2 id="timeline">My Timeline :)</h2><div class="timeline"><div class="tl-item"><span class="tl-dot"></span><div><div class="tl-name">Associate Product Manager @ AlgoUniversity</div><div class="tl-date">July 11, 2023 → January 2, 2024</div></div></div><div class="tl-item"><span class="tl-dot"></span><div><div class="tl-name">Final Semester of college</div><div class="tl-date">January 11, 2024 → November 13, 2024</div></div></div><div class="tl-item"><span class="tl-dot"></span><div><div class="tl-name">Upskilling, Freelancing and Job Hunt</div><div class="tl-date">November 14, 2024 → February 25, 2025</div></div></div><div class="tl-item"><span class="tl-dot"></span><div><div class="tl-name">POV:The Vibe Compass - 0→1 product</div><div class="tl-date">April 15, 2025 → December 31, 2025</div></div></div><div class="tl-item"><span class="tl-dot"></span><div><div class="tl-name">Product - Growth and Marketing @ Creator Circle</div><div class="tl-date">May 5, 2025 → July 15, 2025</div></div></div><div class="tl-item"><span class="tl-dot"></span><div><div class="tl-name">Product and Growth @ FutureAGI</div><div class="tl-date">July 31, 2025 → July 31, 2026</div></div></div></div>
+<h2 id="timeline">My Timeline :)</h2><div class="timeline"><div class="tl-item"><span class="tl-dot"></span><div><div class="tl-name">Associate Product Manager @ AlgoUniversity</div><div class="tl-date">July 11, 2023 → January 2, 2024</div></div></div><div class="tl-item"><span class="tl-dot"></span><div><div class="tl-name">Final Semester of college</div><div class="tl-date">January 11, 2024 → November 13, 2024</div></div></div><div class="tl-item"><span class="tl-dot"></span><div><div class="tl-name">Upskilling, Freelancing and Job Hunt</div><div class="tl-date">November 14, 2024 → February 25, 2025</div></div></div><div class="tl-item"><span class="tl-dot"></span><div><div class="tl-name">Product - Growth and Marketing @ Creator Circle</div><div class="tl-date">May 5, 2025 → July 15, 2025</div></div></div><div class="tl-item"><span class="tl-dot"></span><div><div class="tl-name">Product and Growth @ FutureAGI</div><div class="tl-date">July 31, 2025 → July 31, 2026</div></div></div></div>
 <div class="callout"><div class="callout-icon">📩</div><div class="callout-body">
 
 <p><a href="mailto:uma.lamba59@gmail.com">uma.lamba59@gmail.com</a></p>
@@ -110,5 +110,17 @@
   </article>
   <footer>© 2026 Uma Lamba · <a href="mailto:uma.lamba59@gmail.com">uma.lamba59@gmail.com</a> · <a href="https://www.linkedin.com/in/umalamba/">LinkedIn</a></footer>
 </div>
+<script>
+/* Many browsers have no mail app set up, so a plain mailto link seems to do nothing.
+   Copy the address first and say so, then still try to open the mail app. */
+document.addEventListener("click", function (e) {
+  var a = e.target.closest("a.email-btn");
+  if (!a) return;
+  var email = "uma.lamba59@gmail.com", label = a.textContent;
+  try { navigator.clipboard.writeText(email); } catch (err) {}
+  a.textContent = "Copied: " + email;
+  setTimeout(function () { a.textContent = label; }, 2500);
+});
+</script>
 </body>
 </html>

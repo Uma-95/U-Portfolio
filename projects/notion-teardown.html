@@ -126,5 +126,17 @@
   </article>
   <footer>© 2026 Uma Lamba · <a href="mailto:uma.lamba59@gmail.com">uma.lamba59@gmail.com</a> · <a href="https://www.linkedin.com/in/umalamba/">LinkedIn</a></footer>
 </div>
+<script>
+/* Many browsers have no mail app set up, so a plain mailto link seems to do nothing.
+   Copy the address first and say so, then still try to open the mail app. */
+document.addEventListener("click", function (e) {
+  var a = e.target.closest("a.email-btn");
+  if (!a) return;
+  var email = "uma.lamba59@gmail.com", label = a.textContent;
+  try { navigator.clipboard.writeText(email); } catch (err) {}
+  a.textContent = "Copied: " + email;
+  setTimeout(function () { a.textContent = label; }, 2500);
+});
+</script>
 </body>
 </html>
