@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://portfolio-uma-lamba.vercel.app/sitemap.xml

@@ -420,3 +420,11 @@
     .carousel-count { min-width: 0; font-size: 12px; }
     .swipe-hint { font-size: 11px; padding: 4px 9px; }
   }
+
+  /* Never let a page scroll sideways on small screens */
+  html, body { overflow-x: clip; }
+  .prose, .callout-body, .diary-text { min-width: 0; overflow-wrap: anywhere; }
+  .table-wrap { max-width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 14px 0; }
+  .table-wrap table { display: table; margin: 0; min-width: 480px; }
+  .prose pre, .prose code { white-space: pre-wrap; word-break: break-word; }
+  @media (max-width: 640px) { #diary-track { margin-right: 0; } }
