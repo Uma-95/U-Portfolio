@@ -406,3 +406,17 @@
   #diary-track { padding: 16px 14px 26px 6px; margin: -6px -14px 0 -6px; scroll-padding-left: 6px; }
   .swipe-hint { white-space: nowrap; }
   @media (max-width: 640px) { .carousel-bar { justify-content: space-between; } .swipe-hint { font-size: 11.5px; padding: 4px 10px; } }
+
+  /* PM Diaries: two full cards per screen, nothing hidden inside a card */
+  #diary-track { align-items: flex-start; }
+  #diary-track .diary-card { flex: 0 0 calc((100% - 16px) / 2); height: auto; }
+  #diary-track .diary-text { flex: none; overflow: visible; }
+  @media (max-width: 640px) { #diary-track .diary-card { flex-basis: 86%; height: auto; } }
+  #diary-track { overflow-y: hidden; transition: height .35s ease; }
+  @media (prefers-reduced-motion: reduce) { #diary-track { transition: none; } }
+  @media (max-width: 640px) {
+    .carousel-controls { gap: 6px; }
+    .carousel-controls .arrow { width: 34px; height: 34px; font-size: 15px; }
+    .carousel-count { min-width: 0; font-size: 12px; }
+    .swipe-hint { font-size: 11px; padding: 4px 9px; }
+  }
