@@ -362,3 +362,47 @@
   }
   @media (max-width: 700px) { .mb-love { grid-row: span 6; } }
   @media (max-width: 700px) { .mb-quote { padding: 12px 14px; } }
+
+  /* PM Diaries: Gen Z story cards */
+  .story-bars { display: flex; gap: 5px; margin: 2px 0 12px; }
+  .story-bars .bar { flex: 1; height: 5px; border-radius: 99px; background: var(--line); cursor: pointer; position: relative; overflow: hidden; }
+  .story-bars .bar.done { background: var(--purple); }
+  .story-bars .bar.now { background: linear-gradient(90deg, var(--purple), var(--pink)); }
+  .story-bars .bar:hover { filter: brightness(.95); transform: scaleY(1.4); }
+
+  .swipe-hint { font-family: var(--mono); font-size: 13px; color: var(--purple); background: var(--purple-wash); padding: 5px 12px; border-radius: 999px; transition: opacity .4s ease; }
+  .swipe-hint .hand { display: inline-block; animation: nudge 1.2s ease-in-out infinite; }
+  .swipe-hint.gone { opacity: 0; pointer-events: none; }
+  @keyframes nudge { 0%, 100% { transform: translateX(0); } 50% { transform: translateX(6px); } }
+
+  #diary-track .diary-card { border: 2px solid var(--ink); border-top-width: 2px; border-radius: 22px; box-shadow: 6px 6px 0 var(--ink); background: var(--card);
+    transition: transform .45s cubic-bezier(.34, 1.56, .64, 1), opacity .3s ease, box-shadow .2s ease; padding-top: 16px; }
+  #diary-track .diary-card:nth-child(4n+1) { background: linear-gradient(180deg, var(--purple-wash), var(--card) 42%); }
+  #diary-track .diary-card:nth-child(4n+2) { background: linear-gradient(180deg, var(--pink-wash), var(--card) 42%); }
+  #diary-track .diary-card:nth-child(4n+3) { background: linear-gradient(180deg, var(--teal-wash), var(--card) 42%); }
+  #diary-track .diary-card:nth-child(4n+4) { background: linear-gradient(180deg, var(--peach-wash), var(--card) 42%); }
+  #diary-track .diary-card:not(.is-active) { opacity: .85; transform: rotate(-1.2deg) scale(.96); }
+  #diary-track .diary-card:nth-child(even):not(.is-active) { transform: rotate(1.2deg) scale(.96); }
+  #diary-track .diary-card.is-active, #diary-track .diary-card:hover { opacity: 1; transform: rotate(0) translateY(-6px) scale(1); box-shadow: 9px 9px 0 var(--purple); }
+  #diary-track .diary-card .diary-lesson { font-size: 19px; font-weight: 700; letter-spacing: -.01em; }
+  #diary-track .diary-card.is-active .diary-lesson { color: var(--ink); }
+  .sticker { align-self: flex-start; font-size: 12.5px; font-weight: 600; padding: 4px 11px; border-radius: 999px; background: var(--ink); color: var(--bg);
+    transform: rotate(-3deg); box-shadow: 2px 2px 0 var(--pink); }
+  #diary-track .diary-card:nth-child(even) .sticker { transform: rotate(2.5deg); box-shadow: 2px 2px 0 var(--teal); }
+
+  .reacts { display: flex; align-items: center; gap: 6px; padding-top: 8px; border-top: 1px dashed var(--line); }
+  .react { font-size: 18px; line-height: 1; width: 38px; height: 34px; border-radius: 999px; border: 1.5px solid var(--line); background: var(--card); cursor: pointer;
+    transition: transform .15s ease, background .15s ease, border-color .15s ease; }
+  .react:hover { transform: translateY(-2px); border-color: var(--purple); }
+  .react[aria-pressed="true"] { background: var(--purple-wash); border-color: var(--purple); }
+  .react.pop { animation: pop .45s cubic-bezier(.34, 1.56, .64, 1); }
+  @keyframes pop { 0% { transform: scale(1); } 40% { transform: scale(1.45) rotate(-8deg); } 100% { transform: scale(1); } }
+  .react-hint { margin-left: auto; font-family: var(--mono); font-size: 11.5px; color: var(--soft); }
+
+  @media (prefers-reduced-motion: reduce) {
+    .swipe-hint .hand, .react.pop { animation: none; }
+    #diary-track .diary-card, #diary-track .diary-card:not(.is-active), #diary-track .diary-card:nth-child(even):not(.is-active) { transform: none; transition: none; }
+  }
+  #diary-track { padding: 16px 14px 26px 6px; margin: -6px -14px 0 -6px; scroll-padding-left: 6px; }
+  .swipe-hint { white-space: nowrap; }
+  @media (max-width: 640px) { .carousel-bar { justify-content: space-between; } .swipe-hint { font-size: 11.5px; padding: 4px 10px; } }
